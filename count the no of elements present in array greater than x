@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter the number of elements in array :";
+    cin>>n;
+    int arr[n];
+    int i;
+    for(i=0;i<n;i++) {
+        cin>>arr[i];
+    }
+    int count = 0;
+    int x;
+    cout<<"Enter the target element : ";
+    cin>>x;
+    for(i=0;i<n;i++) {
+        if(x<arr[i]) {
+            count++;
+        }
+    }
+    cout<<"Hence the count is : "<<count<<endl;
+    return 0;
+}
